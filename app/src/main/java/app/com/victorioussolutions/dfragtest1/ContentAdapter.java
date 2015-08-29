@@ -29,7 +29,7 @@ public class ContentAdapter extends ArrayAdapter<DummyContent.DummyItem> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        return super.getView(position, convertView, parent);
-        //return LayoutInflater.from(getContext()).inflate(R.layout.fancy_activity_list_item, parent, false);
+        //return super.getView(position, convertView, parent);
+        return LayoutInflater.from(getContext()).inflate(R.layout.fancy_activity_list_item, parent, false);
     }
 }
