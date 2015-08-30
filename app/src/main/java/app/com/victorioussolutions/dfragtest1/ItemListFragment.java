@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
@@ -42,7 +41,7 @@ public class ItemListFragment extends ListFragment
             mActivatedPosition = savedInstanceState.getInt(STATE_ACTIVATED_POSITION);
         }
         ContentAdapter mAdapter = new ContentAdapter(getActivity(), android.R.layout.simple_list_item_activated_1, android.R.id.text1, DummyContent.ITEMS);
-        View view = inflater.inflate(R.layout.fancy_activity_list_item, container, false);
+        View view = inflater.inflate(R.layout.fancy_activity_list, container, false);
         listView = (ListView) view.findViewById(android.R.id.list);
         listView.setAdapter(mAdapter);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
