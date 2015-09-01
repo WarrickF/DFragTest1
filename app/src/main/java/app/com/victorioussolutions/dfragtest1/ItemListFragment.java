@@ -2,7 +2,7 @@ package app.com.victorioussolutions.dfragtest1;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +21,9 @@ import app.com.victorioussolutions.dfragtest1.dummy.DummyContent;
  * Activities containing this fragment MUST implement the {@link Callbacks}
  * interface.
  */
-public class ItemListFragment extends ListFragment
+public class ItemListFragment extends Fragment
+    
+
 {
     private static final String STATE_ACTIVATED_POSITION = "activated_position";
     private int mActivatedPosition = ListView.INVALID_POSITION;
